@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construcciones XYZ</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="javascript/script.js"></script>
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <header>
+        <div class="logo">Construcciones XYZ</div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Inicio -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Construyendo el Futuro</h1>
+            <p>Ofrecemos soluciones innovadoras y sostenibles en construcción.</p>
+            <a href="#servicios" class="btn">Descubre Nuestros Servicios</a>
+        </div>
+    </section>
+
+    <!-- Sección de Servicios -->
+    <section id="servicios" class="section">
+        <h2>Nuestros Servicios</h2>
+        <div class="services-container">
+            <div class="service">
+                <h3>Construcción de Edificios</h3>
+                <p>Especializados en la construcción de edificaciones residenciales y comerciales.</p>
+            </div>
+            <div class="service">
+                <h3>Diseño Arquitectónico</h3>
+                <p>Ofrecemos diseños arquitectónicos modernos y funcionales adaptados a tus necesidades.</p>
+            </div>
+            <div class="service">
+                <h3>Consultoría y Supervisión</h3>
+                <p>Brindamos consultoría y supervisión para garantizar el éxito de tu proyecto.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Proyectos -->
+    <section id="proyectos" class="section">
+        <h2>Proyectos Recientes</h2>
+        <div class="projects-container">
+            <div class="project" onclick="showProjectDetails('Centro Comercial XYZ', 'Un complejo comercial moderno y sostenible.')">
+                <img src="img/proyecto1.jpg" alt="Proyecto 1">
+                <h3>Centro Comercial XYZ</h3>
+                <p>Un complejo comercial moderno y sostenible.</p>
+            </div>
+            <div class="project" onclick="showProjectDetails('Residencial ABC', 'Un conjunto habitacional de alta gama.')">
+                <img src="img/residencial.jpeg" alt="Proyecto 2">
+                <h3>Residencial ABC</h3>
+                <p>Un conjunto habitacional de alta gama.</p>
+            </div>
+            <div class="project" onclick="showProjectDetails('Torre Empresarial 123', 'Una torre de oficinas con diseño innovador.')">
+                <img src="img/proyecto3.png" alt="Proyecto 3">
+                <h3>Torre Empresarial 123</h3>
+                <p>Una torre de oficinas con diseño innovador.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal para detalles de proyectos -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="projectTitle"></h2>
+            <p id="projectDescription"></p>
+        </div>
+    </div>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="section">
+        <h2>Contáctanos</h2>
+        <form id="contactForm" action="#" method="post">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+        <div id="formResponse" class="form-response"></div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Construcciones XYZ. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
